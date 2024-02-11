@@ -1,0 +1,15 @@
+1. download and install laragon
+2. download zip code and put it inside the WWW folder in laragon
+3. run this code 
+	composer install
+4. copy the .env.example file and rename it to .env
+5. run this code
+	php artisan key:generate
+	php artisan config:clear
+4. open the .env file
+5. change the DB_DATABASE value into divisi_nos_portal
+6. open MySqlWorkbench and create a new database called divisi_nos_portal
+7. to populate di database, in terminal run this code.
+	php artisan migrate
+8. to login inside the app, open the user table and use the password default as 
+	password : password
